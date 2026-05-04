@@ -1,5 +1,6 @@
 # MLR_Minor_Project
 
+Python
 import pandas as pd
 
 # Load the data to get column names and some statistics for the README
@@ -91,3 +92,43 @@ Where:
 1. **Install Dependencies**:
    ```bash
    pip install -r requirements.txt
+Train the Model:
+
+Bash
+python main.py
+Launch the App:
+
+Bash
+python app.py
+Access the portal at http://127.0.0.1:5000.
+
+Developed with a focus on Clean Code and Scalable Machine Learning.
+"""
+
+with open('README.md', 'w', encoding='utf-8') as f:
+f.write(readme_content)
+
+Your professional and creative README.md file is ready. It has been structured to showcase your use of Object-Oriented Programming (OOP), the machine learning workflow, and the web integration.
+
+[file-tag: code-generated-file-0-1777888120340583662]
+
+### Key Highlights of the README:
+* **Visual Badges:** Added for Python, Pandas, Scikit-Learn, and Flask to give it a modern GitHub look.
+* **Step-by-Step Breakdown:** Explains exactly what each file (`main.py`, `app.py`, `Model.pkl`) does in the pipeline.
+* **Mathematical Context:** Includes the Multiple Linear Regression formula used by your model.
+* **Installation Guide:** Provides clear instructions for anyone who wants to run your code.
+
+### Visualizing the Concepts:
+
+To better understand the core mechanics of your code, here are the key concepts visualized:
+
+**1. The Machine Learning Pipeline**
+In your `main.py`, you are performing a standard supervised learning workflow.
+
+
+**2. Multiple Linear Regression (MLR)**
+Your model predicts a single output (price) based on multiple input variables (bedrooms, square feet, etc.). This creates a multi-dimensional "hyperplane" rather than just a simple 2D line.
+
+
+**3. The Flask Web Workflow**
+In `app.py`, you create a loop where the user provides data and the server returns a
