@@ -1,122 +1,153 @@
 # MLR_Minor_Project
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MLR Project Documentation</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: auto; padding: 20px; background-color: #f4f7f6; }
-        header { background: #2c3e50; color: white; padding: 2rem; text-align: center; border-radius: 8px; margin-bottom: 20px; }
-        .container { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 30px; }
-        .tool-tag { display: inline-block; background: #e1f5fe; color: #0277bd; padding: 5px 12px; border-radius: 15px; font-size: 0.9em; margin: 5px; font-weight: bold; }
-        code { background: #f8f8f8; border: 1px solid #ddd; padding: 2px 5px; border-radius: 4px; font-family: 'Courier New', Courier, monospace; }
-        .step-box { border-left: 4px solid #3498db; padding-left: 15px; margin: 20px 0; }
-        .highlight { color: #e67e22; font-weight: bold; }
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-        th, td { text-align: left; padding: 12px; border-bottom: 1px solid #ddd; }
-        th { background-color: #3498db; color: white; }
-    </style>
-</head>
-<body>
+# Mini_Project
+Here’s a **clean, professional README.md** you can directly use for your GitHub project 👇
 
-<header>
-    <h1>Multiple Linear Regression (MLR) Project</h1>
-    <p>End-to-End Real Estate Price Prediction using OOP & Flask</p>
-</header>
+---
 
-<div class="container">
-    <h2>🛠️ Tools & Technologies</h2>
-    <div>
-        <span class="tool-tag">Python 3.x</span>
-        <span class="tool-tag">Flask (Web Framework)</span>
-        <span class="tool-tag">Pandas (Data Manipulation)</span>
-        <span class="tool-tag">NumPy (Numerical Computing)</span>
-        <span class="tool-tag">Scikit-Learn (ML Algorithms)</span>
-        <span class="tool-tag">Pickle (Model Serialization)</span>
-        <span class="tool-tag">Gunicorn (WSGI HTTP Server)</span>
-    </div>
+## ✅ **README.md Content**
 
-    <h2>📊 Project Architecture</h2>
-    <p>The project is divided into two primary phases: <strong>Model Development</strong> using OOP principles and <strong>Web Deployment</strong> via a Flask backend.</p>
-    
-    
+```markdown
+# 🏠 House Price Prediction using Multiple Linear Regression (OOP)
 
-    <h2>🚀 Step-by-Step Implementation</h2>
+## 📌 Project Overview
+This project implements **Multiple Linear Regression (MLR)** using **Object-Oriented Programming (OOP)** concepts in Python.  
+The model predicts house prices based on various features like bedrooms, bathrooms, square footage, location, and more.
 
-    <div class="step-box">
-        <h3>Step 1: Data Preprocessing & Class Initialization</h3>
-        <p>The <code>MLR</code> class is initialized with the <code>data.csv</code> file. The code performs <strong>Label Encoding</strong> manually on categorical features like <code>city</code> and <code>country</code> to convert them into numerical formats suitable for the regression model[cite: 2].</p>
-    </div>
+---
 
-    <div class="step-box">
-        <h3>Step 2: Model Training</h3>
-        <p>Using <code>sklearn.linear_model.LinearRegression</code>, the model learns the relationship between independent variables (bedrooms, sqft, built year, etc.) and the target variable (price)[cite: 2].</p>
-        
-    </div>
+## 🚀 Features
+- ✅ OOP-based implementation (Class: `MLR`)
+- ✅ Data preprocessing (categorical encoding)
+- ✅ Train-test split
+- ✅ Model training using Linear Regression
+- ✅ Model evaluation (R² Score & RMSE)
+- ✅ Custom prediction on new data
+- ✅ Model saving & loading using Pickle
+- ✅ Exception handling for robustness
 
-    <div class="step-box">
-        <h3>Step 3: Performance Evaluation</h3>
-        <p>The model's accuracy is measured using <code>r2_score</code> and <code>root_mean_squared_error</code>. This ensures the model generalizes well to unseen testing data[cite: 2].</p>
-    </div>
+---
 
-    <div class="step-box">
-        <h3>Step 4: Serialization (Model Persistence)</h3>
-        <p>The trained model object <code>m</code> is saved as <code>Model.pkl</code> using the <strong>Pickle</strong> library. This allows the Flask backend to load the "brain" of the project without retraining[cite: 1, 2].</p>
-    </div>
+## 🛠️ Technologies Used
+- Python
+- NumPy
+- Pandas
+- Scikit-learn
+- Pickle
 
-    <div class="step-box">
-        <h3>Step 5: Web Integration (Flask)</h3>
-        <p>The <code>app.py</code> file creates two routes:
-            <ul>
-                <li><code>/</code>: Renders the <code>index.html</code> landing page[cite: 1].</li>
-                <li><code>/predict</code>: Collects form data, converts it to a NumPy array, and uses <code>m.predict()</code> to return the estimated price[cite: 1].</li>
-            </ul>
-        </p>
-    </div>
+---
 
-    <h2>📈 Feature Breakdown</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Feature Category</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>Structural</strong></td>
-                <td>Bedrooms, Bathrooms, Floors, Sqft Living/Lot</td>
-            </tr>
-            <tr>
-                <td><strong>Condition</strong></td>
-                <td>Waterfront, View, Overall Condition</td>
-            </tr>
-            <tr>
-                <td><strong>Temporal</strong></td>
-                <td>Year Built, Year Renovated</td>
-            </tr>
-            <tr>
-                <td><strong>Location</strong></td>
-                <td>City, Country (USA)</td>
-            </tr>
-        </tbody>
-    </table>
+## 📂 Project Structure
+```
 
-    <h2>⚙️ How to Run</h2>
-    <ol>
-        <li>Ensure <code>data.csv</code> and <code>Model.pkl</code> are in the root directory.</li>
-        <li>Install dependencies: <code>pip install -r requirements.txt</code>[cite: 5].</li>
-        <li>Run the trainer script to generate/update the model: <code>python train_script.py</code>.</li>
-        <li>Start the web server: <code>python app.py</code> or use <code>gunicorn app:app</code> for production[cite: 1, 4].</li>
-    </ol>
+project/
+│
+├── data.csv              # Dataset
+├── model.py              # Main Python script
+├── Model.pkl             # Saved trained model
+├── README.md             # Project documentation
 
-    <p style="text-align: center; margin-top: 50px; color: #7f8c8d;">
-        <i>Created with a focus on clean code and Object-Oriented Design.</i>
-    </p>
-</div>
+````
 
-</body>
-</html>
+---
+
+## ⚙️ How It Works
+
+### 1. Data Loading
+- Reads dataset using Pandas
+- Encodes categorical columns like `city` and `country`
+
+### 2. Data Splitting
+- Splits dataset into training and testing sets (80/20)
+
+### 3. Model Training
+- Uses `LinearRegression` from Scikit-learn
+
+### 4. Evaluation
+- R² Score (Accuracy)
+- RMSE (Loss)
+
+### 5. Prediction
+- Predicts house price for custom input data
+
+### 6. Model Saving
+- Saves trained model using Pickle (`Model.pkl`)
+- Reloads model and verifies prediction
+
+---
+
+## ▶️ How to Run
+
+### Step 1: Install Dependencies
+```bash
+pip install numpy pandas scikit-learn
+````
+
+### Step 2: Run the Project
+
+```bash
+python model.py
+```
+
+---
+
+## 📊 Sample Output
+
+```
+Train Accuracy: 0.85
+Train Loss: 120000.45
+Test Accuracy: 0.82
+Test Loss: 135000.22
+Own point predictions: [450000.78]
+```
+
+---
+
+## 👨‍💻 Author
+
+**Sharath Kanchipati**
+📧 Email: [ksk111000@gmail.com](mailto:ksk111000@gmail.com)
+📱 Phone: 8099413353
+💼 Role: Data Analyst & ML Engineer
+
+---
+
+## 📌 Future Enhancements
+
+* 🔹 Deploy using Flask (Web App)
+* 🔹 Add UI for user input
+* 🔹 Use advanced models (Random Forest, XGBoost)
+* 🔹 Hyperparameter tuning
+
+---
+
+## ⭐ Conclusion
+
+This project demonstrates how **Machine Learning + OOP** can be combined to build a structured and scalable predictive model.
+
+---
+
+````
+
+---
+
+## 🔥 Pro Tip
+When uploading to GitHub:
+- Name file exactly:
+```bash
+README.md
+````
+
+* Place it in **root folder**
+
+---
+
+## 🚀 Want next level?
+
+I can help you:
+
+* Add **Flask + HTML UI (full deployment)**
+* Make this **resume-level GitHub project (with badges + screenshots)**
+* Write **LinkedIn post for this project**
+
+Just tell 👍
