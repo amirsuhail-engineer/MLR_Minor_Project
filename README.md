@@ -48,7 +48,6 @@ project/
 
 ````
 
----
 
 ⚙️ How It Works
 
@@ -131,4 +130,3 @@ This project demonstrates how **Machine Learning + OOP** can be combined to buil
 
 ````
 
----
