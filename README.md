@@ -32,11 +32,12 @@ The model predicts house prices based on various features like bedrooms, bathroo
 
 ---
 
-📂 Project Structure
 ```
+📂 Project Structure
+
 
 project/
-│
+
 ├── data.csv              # Dataset
 
 ├── model.py              # Main Python script
