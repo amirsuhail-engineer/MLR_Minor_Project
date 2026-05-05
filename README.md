@@ -105,10 +105,10 @@ Own point predictions: [450000.78]
 
 ## 👨‍💻 Author
 
-**Sharath Kanchipati**
-📧 Email: [ksk111000@gmail.com](mailto:ksk111000@gmail.com)
-📱 Phone: 8099413353
-💼 Role: Data Analyst & ML Engineer
+**MOHAMMAD AMIR SUHAIL**
+📧 Email: [amirsuhailengg01@gmail.com](mailto:amirsuhailengg01@gmail.com)
+📱 Phone: 9491753326
+💼 Role: Data Scientist & ML Engineer
 
 ---
 
