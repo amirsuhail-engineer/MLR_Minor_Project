@@ -130,3 +130,16 @@ This project demonstrates how **Machine Learning + OOP** can be combined to buil
 
 ````
 
+🚀 Real Estate Price Predictor: MLR ProjectA robust, end-to-end Machine Learning application designed to predict housing prices using Multiple Linear Regression (MLR). This project demonstrates the seamless integration of Object-Oriented Programming (OOP) for model development and a Flask web interface for real-time predictions.🛠️ Tools & Technologies UsedLanguage: Python 3.xMachine Learning: scikit-learn (Linear Regression, Model Evaluation)  Data Manipulation: pandas, numpy  Web Framework: Flask (Backend API & Routing)  Model Persistence: pickle (Saving/Loading the trained model)  Deployment: Gunicorn (WSGI HTTP Server)  Frontend: HTML/Jinja2 Templates  ⚙️ How It Works: Step-by-Step1. Data Processing & OOP ArchitectureThe core logic is encapsulated within a Python class MLR.  Initialization: Loads data.csv and performs label encoding on categorical features like 'city' and 'country' to convert them into numerical formats suitable for math.  Data Splitting: Uses an 80/20 split for training and testing to ensure the model generalizes well to unseen data.  2. Model TrainingThe model uses the LinearRegression algorithm.Training: Fits a line through the multidimensional feature space (bedrooms, sqft, floors, etc.) to minimize the error between actual and predicted prices.  Evaluation: Calculates R² Score (Accuracy) and Root Mean Squared Error (RMSE) to measure performance.  3. SerializationOnce trained, the model object reg is "pickled" into a file named Model.pkl. This allows the web server to use the model without retraining it every time.  4. Web Implementation (Flask)Backend (app.py): Loads Model.pkl. It has two main routes:/: Displays the home page.  /predict: Takes form data (user inputs), converts them to a NumPy array, and returns the predicted price to the UI.  📊 Data Insights & LogicThe model considers several critical factors from data.csv:  Internal Space: sqft_living, sqft_above, sqft_basement.Structure: bedrooms, bathrooms, floors.Location: city, country.Condition: view, waterfront, yr_built.📂 Project StructurePlaintext.
+├── app.py              # Flask Backend[cite: 1]
+├── main.py             # MLR Class & Training Logic[cite: 2]
+├── data.csv            # Dataset[cite: 2]
+├── Model.pkl           # Saved ML Model[cite: 3]
+├── Procfile            # Deployment Config[cite: 4]
+├── requirements.txt    # Dependencies[cite: 5]
+└── templates/
+    └── index.html      # Frontend UI
+🚀 How to RunInstall Dependencies:Bashpip install -r requirements.txt
+Train the Model:Bashpython main.py
+Launch the App:Bashpython app.py
+📬 Contact DetailsDeveloper: [Your Name]Email: [Your Email Address]GitHub: [Your Profile Link]LinkedIn: [Your Profile Link]
