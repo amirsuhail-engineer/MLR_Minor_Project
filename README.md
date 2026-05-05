@@ -1,20 +1,17 @@
 # MLR_Minor_Project
 
-
 ---
 
-## ✅ **README.md Content**
-
 ```markdown
-# 🏠 House Price Prediction using Multiple Linear Regression (OOP)
+🏠 House Price Prediction using Multiple Linear Regression (OOP)
 
-## 📌 Project Overview
+📌 Project Overview
 This project implements **Multiple Linear Regression (MLR)** using **Object-Oriented Programming (OOP)** concepts in Python.  
 The model predicts house prices based on various features like bedrooms, bathrooms, square footage, location, and more.
 
 ---
 
-## 🚀 Features
+🚀 Features
 - ✅ OOP-based implementation (Class: `MLR`)
 - ✅ Data preprocessing (categorical encoding)
 - ✅ Train-test split
@@ -26,7 +23,7 @@ The model predicts house prices based on various features like bedrooms, bathroo
 
 ---
 
-## 🛠️ Technologies Used
+🛠️ Technologies Used
 - Python
 - NumPy
 - Pandas
@@ -35,21 +32,24 @@ The model predicts house prices based on various features like bedrooms, bathroo
 
 ---
 
-## 📂 Project Structure
+📂 Project Structure
 ```
 
 project/
 │
 ├── data.csv              # Dataset
+
 ├── model.py              # Main Python script
+
 ├── Model.pkl             # Saved trained model
+
 ├── README.md             # Project documentation
 
 ````
 
 ---
 
-## ⚙️ How It Works
+⚙️ How It Works
 
 ### 1. Data Loading
 - Reads dataset using Pandas
@@ -74,9 +74,9 @@ project/
 
 ---
 
-## ▶️ How to Run
+▶️ How to Run
 
-### Step 1: Install Dependencies
+### **Step 1: Install Dependencies**
 ```bash
 pip install numpy pandas scikit-learn
 ````
@@ -101,16 +101,19 @@ Own point predictions: [450000.78]
 
 ---
 
-## 👨‍💻 Author
+👨‍💻 Author
 
 **MOHAMMAD AMIR SUHAIL**
+
 📧 Email: [amirsuhailengg01@gmail.com](mailto:amirsuhailengg01@gmail.com)
+
 📱 Phone: 9491753326
+
 💼 Role: Data Scientist & ML Engineer
 
 ---
 
-## 📌 Future Enhancements
+📌 Future Enhancements
 
 * 🔹 Deploy using Flask (Web App)
 * 🔹 Add UI for user input
@@ -119,7 +122,7 @@ Own point predictions: [450000.78]
 
 ---
 
-## ⭐ Conclusion
+⭐ Conclusion
 
 This project demonstrates how **Machine Learning + OOP** can be combined to build a structured and scalable predictive model.
 
@@ -128,24 +131,3 @@ This project demonstrates how **Machine Learning + OOP** can be combined to buil
 ````
 
 ---
-
-## 🔥 Pro Tip
-When uploading to GitHub:
-- Name file exactly:
-```bash
-README.md
-````
-
-* Place it in **root folder**
-
----
-
-## 🚀 Want next level?
-
-I can help you:
-
-* Add **Flask + HTML UI (full deployment)**
-* Make this **resume-level GitHub project (with badges + screenshots)**
-* Write **LinkedIn post for this project**
-
-Just tell 👍
