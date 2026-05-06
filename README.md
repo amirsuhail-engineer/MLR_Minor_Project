@@ -111,6 +111,11 @@ Own point predictions: [450000.78]
 
 💼 Role: Data Scientist & ML Engineer
 
+Github: [github.com/amirsuhail-engineer](https://github.com/amirsuhail-engineer)
+
+LinkedIn: [www.linkedin.com/in/mohammad-amir-suhail/](https://www.linkedin.com/in/mohammad-amir-suhail/)
+
+
 ---
 
 📌 Future Enhancements
